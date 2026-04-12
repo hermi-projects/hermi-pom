@@ -28,7 +28,7 @@
     <spotless.version>2.43.0</spotless.version>
     <checkstyle.plugin.version>3.6.0</checkstyle.plugin.version>
     <checkstyle.core.version>9.3</checkstyle.core.version>
-    <slf4j.version>2.0.17</slf4j.version>
+    <logback.version>1.5.32</logback.version>
 
     <!-- Sub-module External Dependencies -->
     <jakarta.validation.version>3.1.1</jakarta.validation.version>
@@ -40,12 +40,12 @@
   <dependencyManagement>
     <dependencies>
       <!-- External Dependencies -->
+      <!-- Logback: Logging framework for Java -->
       <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>${slf4j.version}</version>
-        <scope>compile</scope>
-      </dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>   
       <!-- Jakarta Bean Validation API: Standard interface for JavaBean validation (e.g., @NotNull, @Size) -->
       <dependency>
         <groupId>jakarta.validation</groupId>

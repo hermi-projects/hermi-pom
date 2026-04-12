@@ -45,7 +45,7 @@
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
         <version>${logback.version}</version>
-      </dependency>   
+      </dependency>
       <!-- Jakarta Bean Validation API: Standard interface for JavaBean validation (e.g., @NotNull, @Size) -->
       <dependency>
         <groupId>jakarta.validation</groupId>

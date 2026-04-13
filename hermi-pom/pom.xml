@@ -37,23 +37,11 @@
     <apache.commons.version>3.18.0</apache.commons.version>
     <archunit.version>1.4.1</archunit.version>
     <junit-jupiter.version>5.10.2</junit-jupiter.version>
+    <assertj.version>3.25.3</assertj.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <!-- External Dependencies -->
-      <!-- JUnit 5: Standard unit testing framework for Java, providing API for tests and Runner for execution -->
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit-jupiter.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit-jupiter.version}</version>
-        <scope>test</scope>
-      </dependency>
       <!-- Logback: Logging framework for Java -->
       <dependency>
         <groupId>ch.qos.logback</groupId>
@@ -89,6 +77,26 @@
         <groupId>com.tngtech.archunit</groupId>
         <artifactId>archunit</artifactId>
         <version>${archunit.version}</version>
+      </dependency>
+      <!-- JUnit 5: Standard unit testing framework for Java, providing API for tests and Runner for execution -->
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit-jupiter.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit-jupiter.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <!-- AssertJ: A fluent assertion library for Java, providing a rich set of assertions and helpful error messages -->
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>${assertj.version}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

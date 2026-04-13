@@ -36,10 +36,24 @@
     <jakarta.el.version>4.0.2</jakarta.el.version>
     <apache.commons.version>3.18.0</apache.commons.version>
     <archunit.version>1.4.1</archunit.version>
+    <junit-jupiter.version>5.10.2</junit-jupiter.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <!-- External Dependencies -->
+      <!-- JUnit 5: Standard unit testing framework for Java, providing API for tests and Runner for execution -->
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit-jupiter.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit-jupiter.version}</version>
+        <scope>test</scope>
+      </dependency>
       <!-- Logback: Logging framework for Java -->
       <dependency>
         <groupId>ch.qos.logback</groupId>

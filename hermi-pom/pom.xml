@@ -39,7 +39,7 @@
     <apache.commons.version>3.18.0</apache.commons.version>
     <archunit.version>1.4.1</archunit.version>
     <junit-jupiter.version>5.10.2</junit-jupiter.version>
-    <assertj.version>3.25.3</assertj.version>
+    <assertj.version>3.27.7</assertj.version>
   </properties>
   <dependencyManagement>
     <dependencies>

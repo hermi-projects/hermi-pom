@@ -30,7 +30,7 @@
     <spotless.version>2.43.0</spotless.version>
     <checkstyle.plugin.version>3.6.0</checkstyle.plugin.version>
     <checkstyle.core.version>9.3</checkstyle.core.version>
-    <slf4j-api.version>1.5.32</slf4j-api.version>
+    <slf4j-api.version>2.0.17</slf4j-api.version>
     <logback.version>1.5.32</logback.version>
 
     <!-- Sub-module External Dependencies -->

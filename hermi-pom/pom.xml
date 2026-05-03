@@ -30,6 +30,7 @@
     <spotless.version>2.43.0</spotless.version>
     <checkstyle.plugin.version>3.6.0</checkstyle.plugin.version>
     <checkstyle.core.version>9.3</checkstyle.core.version>
+    <slf4j-api.version>1.5.32</slf4j-api.version>
     <logback.version>1.5.32</logback.version>
 
     <!-- Sub-module External Dependencies -->
@@ -49,6 +50,11 @@
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
         <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j-api.version}</version>
       </dependency>
       <!-- Jakarta Bean Validation API: Standard interface for JavaBean validation (e.g., @NotNull, @Size) -->
       <dependency>
